@@ -1,3 +1,5 @@
+'use strict'
+
 // asking User name
 var userName = prompt('What is your name?')
 alert ('Nice to meet you, ' + userName + '! I am Julia.')
