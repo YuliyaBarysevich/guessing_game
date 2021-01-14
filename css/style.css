@@ -34,6 +34,40 @@ h2 , h3 {
   
 }
 
+.list {
+ text-align: center;
+ border: 3px solid #435C73;;
+ width: 450px;
+ margin: 10px auto;
+
+}
+ol {
+  list-style-position: inside;
+}
+
+li {
+  padding: 5px;
+  font-family: fantasy;
+  font-size: 20px;
+
+}
+ul {
+  list-style-type: none;
+}
+
+.experience {
+  text-align: center;
+  border: 3px solid #435C73;;
+  width: 450px;
+  margin: 10px auto;
+}
+
+span {
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: bold;
+}
+
 .contactInfo img {
   height: 50px;
   width: 50px;
@@ -69,7 +103,8 @@ h2 , h3 {
 p {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 33%;
+  margin-left: auto;
+  margin-right: auto;
   width: 500px;
   text-align: center;
   line-height: 1.4;
@@ -81,4 +116,6 @@ footer {
   background-color: #7790A6;
   font-family: fantasy;
 }
+
+
 
