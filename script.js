@@ -9,6 +9,7 @@ var score = 0;
 var wrongAnswer = 0;
 //Questions 
 //1st question 
+function guessAge(){
 var myAge = prompt('Am I 30 years old?').toLowerCase()
 if (myAge == 'no' || myAge == 'n') {
   //console.log ('Correct answer')
@@ -22,8 +23,11 @@ if (myAge == 'no' || myAge == 'n') {
   //console.log ('You had to type YES or NO')
   alert ('You had to type YES or NO')
 };
+}
+guessAge()
 
 //2nd question 
+function guessHometown (){
 var placeOfBirth = prompt('Am I from Belarus?').toLowerCase()
 if (placeOfBirth == 'yes' || placeOfBirth == 'y') {
   //console.log ('Correct answer')
@@ -37,8 +41,11 @@ if (placeOfBirth == 'yes' || placeOfBirth == 'y') {
   //console.log ('You had to type YES or NO')
   alert ('You had to type YES or NO')
 };
+}
+guessHometown()
 
 //3rd question 
+function guessCity (){
 var currentCity = prompt('Do I live in NYC now?').toLowerCase()
 if (currentCity == 'yes' || currentCity == 'y') {
    //console.log ('Wrong answer')
@@ -52,8 +59,11 @@ if (currentCity == 'yes' || currentCity == 'y') {
   //console.log ('You had to type YES or NO')
   alert ('You had to type YES or NO')
 };
+}
+guessCity()
 
 //4th question 
+function guessFamily (){
 var familyQuestion = prompt('Do I live in USA with my family?').toLowerCase()
 if (familyQuestion == 'yes' || familyQuestion == 'y') {
    //console.log ('Wrong answer')
@@ -67,8 +77,12 @@ if (familyQuestion == 'yes' || familyQuestion == 'y') {
   //console.log ('You had to type YES or NO')
   alert ('You had to type YES or NO')
 };
+}
+guessFamily()
 
-//5th question 
+
+//5th question
+function guessState (){ 
 var favoriteState = prompt('Is my favorite state South Dakota?').toLowerCase()
 if (favoriteState == 'yes' || favoriteState == 'y') {
 //console.log ('Wrong answer')
@@ -82,10 +96,13 @@ if (favoriteState == 'yes' || favoriteState == 'y') {
   //console.log ('You had to type YES or NO')
   alert ('You had to type YES or NO')
 };
+}
+guessState()
 
 //6th question 
 var numberOfGuesses = 4;
 
+function guessStatesVisited () {
 for (let i = 0; i < numberOfGuesses; i++) {
   var response = prompt('How many states did I visit? Please enter a number from 1 to 50: ')
   var correctAnswer = 36;
@@ -109,11 +126,13 @@ for (let i = 0; i < numberOfGuesses; i++) {
     alert('Sorry! It was the last try. Right answer was 36.')
   }
 }
+}
+guessStatesVisited ()
 
 //7th question 
 var arrayOfCities = ['MINSK', 'VILNIUS', 'MOSCOW', 'NEW YORK', 'BERLIN']
 let tries;
-
+function guessCities(){
  outer_loop:
  for (let tries = 5; tries >= 0; tries--) { 
    var nameCity = prompt('Please name at least 1 city where I lived: ').toUpperCase()
@@ -129,6 +148,7 @@ let tries;
      break;
    } 
  }
- 
+}
+guessCities()
 //last alert
 alert ('Thank you for answering my questions, ' + userName + '! It was fun :) You gave ' + score + ' right answers, and ' + wrongAnswer + ' wrong answers.')
